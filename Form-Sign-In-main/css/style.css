@@ -36,7 +36,8 @@ main section{
     background-position: center; */ 
     background-size: cover; 
     height: 100%;
-     position: relative; /* bloquer dans sonb parent*/
+    /*Astuce 1*/
+   /*  position: relative; /* bloquer dans sonb parent*/
 }
 
 .intro div{
@@ -51,18 +52,71 @@ main section{
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%); */
-   
+  
 }
 
 .signin p{
     color: rgb(128, 128, 128);
 }
 
-h1{
-    color: #000000;
-    font-size: 3rem;
+/* formulaire */
+
+.signin form{
+    width: 50%;
+    margin: auto;
 }
 
-.block{
+.signin form h1{
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.signin form p{
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin: 0 0 32px 0;
+}
+
+.signin form label{
     display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 2px;    
+}
+
+.signin form input{
+    display: block;
+    border: 1px solid var(--gray-light);
+    border-radius: 4px;
+    padding: 12px; /* 12px de marge interieur sur les 4 côtés */
+    margin: 0 0 16px; /* 16px marge exterieur */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signin form button{
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 12px 0;
+    border: none;
+    width: 100%;
+}
+
+.signin form a {
+    border: 1px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.9em;
+    gap: 10px;
+    padding: 10px 0;
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
+.signin form img {
+    width: 5%;
 }
