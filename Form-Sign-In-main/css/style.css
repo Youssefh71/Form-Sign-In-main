@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root{
+--white: #ffffff;
+--white-opacity-85: rgba(255, 255, 255, 0.85);
+--black: #000000;
+--gray-light: #cbcbcb;
+--gray: rgb(128, 128, 128);
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+main section{
+    width: 50%;
+}
+
+
+.intro{
+    background: url(../imgs/women_book.jpg) center no-repeat;
+    /* background-image: url(../imgs/women_book.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */ 
+    background-size: cover; 
+    height: 100%;
+     position: relative; /* bloquer dans sonb parent*/
+}
+
+.intro div{
+    background-color: var(--white-opacity-85);
+    width: 65%;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    padding: 20px;
+
+    /* astuce 1*/
+    /* position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); */
+   
+}
+
+.signin p{
+    color: rgb(128, 128, 128);
+}
+
+h1{
+    color: #000000;
+    font-size: 3rem;
+}
+
+.block{
+    display: block;
+}
